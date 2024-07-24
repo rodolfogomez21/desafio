@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <img class="logo" src="images.png" alt="Logo de alura latam">
+    <div class="container">
+            
+       
+       
+        <section class="usuario">   
+            <textarea class="textoUsuario" id="palabraUsuario" pattern="[a-z]" placeholder="Ingrese el texto a encriptar aquí" autocomplete="off"></textarea>
+            <p class="note">¡Solo letras minúsculas y sin acentos!</p>
+            <div class="botones">
+                 
+              <button class="boton1" id="boton-de-encriptar" onclick="encriptar()">Encriptar!</button>
+                <button class="boton2" id="boton-de-desencriptar" onclick="desencriptar()" disabled>Desencriptar!</button>
+            
+            </div>
+        </section>    
+        
+        <section class="input-respuesta"> 
+            <textarea class="textoRespuesta" id="textoEncriptado" placeholder="Ningún mensaje encontrado" autocomplete="off"></textarea>
+            <button class="boton3" id="boton-de-copiar" onclick="copiar()" style="visibility:hidden;">Copiar</button>
+        </section>
+       
+           
+
+    </div>
+    
+    <footer class="footer">
+        <p class="textoFoooter">Desarrollado por Rodolfo Gomez</p>
+    </footer> 
+    <script src="app.js"></script>  
+    
+</body>
+</html>
